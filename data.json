@@ -1,0 +1,13 @@
+{
+    "message": "Welcome to Flask API",
+    "items": [
+        {
+            "id": 1,
+            "name": "Learn Flask"
+        },
+        {
+            "id": 2,
+            "name": "Learn Git"
+        }
+    ]
+}
