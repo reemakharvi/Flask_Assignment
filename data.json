@@ -1,13 +1,14 @@
 {
-    "message": "Welcome to Flask API",
+    "message": "Updated JSON directly on main branch",
     "items": [
         {
             "id": 1,
-            "name": "Learn Flask"
+            "name": "Learn Python"
         },
         {
             "id": 2,
             "name": "Learn Git"
         }
-    ]
+    ],
+    "updatedBy": "main"
 }
