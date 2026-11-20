@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <title>To-Do Application</title>
@@ -7,6 +8,10 @@
     <h1>To-Do List</h1>
 
     <form id="todoForm">
+        <label>Item ID:</label>
+        <input type="text" id="itemId" required>
+        <br><br>
+
         <label>Item Name:</label>
         <input type="text" id="itemName" required>
         <br><br>
@@ -24,6 +29,7 @@
         document.getElementById("todoForm").addEventListener("submit", async function(event) {
             event.preventDefault();
 
+            const itemId = document.getElementById("itemId").value;
             const itemName = document.getElementById("itemName").value;
             const itemDescription = document.getElementById("itemDescription").value;
 
@@ -33,7 +39,7 @@
                     headers: {
                         "Content-Type": "application/json"
                     },
-                    body: JSON.stringify({ itemName, itemDescription })
+                    body: JSON.stringify({ itemId, itemName, itemDescription })
                 });
 
                 const data = await result.json();
